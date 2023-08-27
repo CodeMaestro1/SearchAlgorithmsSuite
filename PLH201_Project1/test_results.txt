@@ -1,0 +1,48 @@
+For N: 50 and stringLength: 55 | Counter Index for Method A: 9,8 | Counter Index for Method B: 1,7 | Counter Index for Method C: 1,4
+Mean time of method A: 68545 | Mean time of method B: 32372 | Mean time of method C: 33488
+For N: 100 and stringLength: 55 | Counter Index for Method A: 19 | Counter Index for Method B: 3,1 | Counter Index for Method C: 1,8
+Mean time of method A: 118667 | Mean time of method B: 65389 | Mean time of method C: 32769
+For N: 200 and stringLength: 55 | Counter Index for Method A: 38,3 | Counter Index for Method B: 5,4 | Counter Index for Method C: 2,4
+Mean time of method A: 240043 | Mean time of method B: 74661 | Mean time of method C: 33444
+For N: 500 and stringLength: 55 | Counter Index for Method A: 96,4 | Counter Index for Method B: 13,1 | Counter Index for Method C: 3,4
+Mean time of method A: 576756 | Mean time of method B: 107134 | Mean time of method C: 38150
+For N: 800 and stringLength: 55 | Counter Index for Method A: 150,6 | Counter Index for Method B: 19,7 | Counter Index for Method C: 4
+Mean time of method A: 838338 | Mean time of method B: 130202 | Mean time of method C: 41620
+For N: 1000 and stringLength: 55 | Counter Index for Method A: 185,5 | Counter Index for Method B: 24,5 | Counter Index for Method C: 4,2
+Mean time of method A: 1020419 | Mean time of method B: 181171 | Mean time of method C: 44104
+For N: 2000 and stringLength: 55 | Counter Index for Method A: 380,2 | Counter Index for Method B: 49,5 | Counter Index for Method C: 5,1
+Mean time of method A: 2199504 | Mean time of method B: 349478 | Mean time of method C: 55103
+For N: 5000 and stringLength: 55 | Counter Index for Method A: 933,6 | Counter Index for Method B: 121 | Counter Index for Method C: 6,5
+Mean time of method A: 5192467 | Mean time of method B: 893265 | Mean time of method C: 55835
+For N: 10000 and stringLength: 55 | Counter Index for Method A: 1903,9 | Counter Index for Method B: 246,1 | Counter Index for Method C: 7,5
+Mean time of method A: 11144023 | Mean time of method B: 1611086 | Mean time of method C: 66167
+For N: 50000 and stringLength: 55 | Counter Index for Method A: 9330,1 | Counter Index for Method B: 1204,2 | Counter Index for Method C: 9,8
+Mean time of method A: 53324368 | Mean time of method B: 7661005 | Mean time of method C: 80035
+For N: 100000 and stringLength: 55 | Counter Index for Method A: 18560,7 | Counter Index for Method B: 2395,2 | Counter Index for Method C: 10,8
+Mean time of method A: 99473113 | Mean time of method B: 22348005 | Mean time of method C: 85480
+For N: 200000 and stringLength: 55 | Counter Index for Method A: 38132,3 | Counter Index for Method B: 4920,7 | Counter Index for Method C: 11,7
+Mean time of method A: 235043679 | Mean time of method B: 33155620 | Mean time of method C: 109693
+For N: 50 and stringLength: 27 | Counter Index for Method A: 5,4 | Counter Index for Method B: 1,7 | Counter Index for Method C: 1,3
+Mean time of method A: 39805 | Mean time of method B: 26524 | Mean time of method C: 30291
+For N: 100 and stringLength: 27 | Counter Index for Method A: 10 | Counter Index for Method B: 3,1 | Counter Index for Method C: 1,8
+Mean time of method A: 68982 | Mean time of method B: 39051 | Mean time of method C: 29156
+For N: 200 and stringLength: 27 | Counter Index for Method A: 18,9 | Counter Index for Method B: 5,3 | Counter Index for Method C: 2,4
+Mean time of method A: 114592 | Mean time of method B: 47546 | Mean time of method C: 29303
+For N: 500 and stringLength: 27 | Counter Index for Method A: 46,2 | Counter Index for Method B: 12,5 | Counter Index for Method C: 3,4
+Mean time of method A: 275672 | Mean time of method B: 88241 | Mean time of method C: 42285
+For N: 800 and stringLength: 27 | Counter Index for Method A: 74,8 | Counter Index for Method B: 19,6 | Counter Index for Method C: 4,1
+Mean time of method A: 439384 | Mean time of method B: 134152 | Mean time of method C: 41301
+For N: 1000 and stringLength: 27 | Counter Index for Method A: 97,2 | Counter Index for Method B: 25,7 | Counter Index for Method C: 4,3
+Mean time of method A: 616287 | Mean time of method B: 190893 | Mean time of method C: 46976
+For N: 2000 and stringLength: 27 | Counter Index for Method A: 191,8 | Counter Index for Method B: 50 | Counter Index for Method C: 5,2
+Mean time of method A: 1190602 | Mean time of method B: 339347 | Mean time of method C: 50923
+For N: 5000 and stringLength: 27 | Counter Index for Method A: 475,3 | Counter Index for Method B: 123,2 | Counter Index for Method C: 6,5
+Mean time of method A: 2874627 | Mean time of method B: 830151 | Mean time of method C: 58881
+For N: 10000 and stringLength: 27 | Counter Index for Method A: 929,5 | Counter Index for Method B: 240,3 | Counter Index for Method C: 7,5
+Mean time of method A: 5494943 | Mean time of method B: 1579632 | Mean time of method C: 65001
+For N: 50000 and stringLength: 27 | Counter Index for Method A: 4719,2 | Counter Index for Method B: 1218,1 | Counter Index for Method C: 9,8
+Mean time of method A: 28291306 | Mean time of method B: 8035067 | Mean time of method C: 81138
+For N: 100000 and stringLength: 27 | Counter Index for Method A: 9358,9 | Counter Index for Method B: 2415,5 | Counter Index for Method C: 10,8
+Mean time of method A: 57878371 | Mean time of method B: 15832604 | Mean time of method C: 87995
+For N: 200000 and stringLength: 27 | Counter Index for Method A: 19304,6 | Counter Index for Method B: 4982,2 | Counter Index for Method C: 11,7
+Mean time of method A: 118232078 | Mean time of method B: 32883172 | Mean time of method C: 102823
