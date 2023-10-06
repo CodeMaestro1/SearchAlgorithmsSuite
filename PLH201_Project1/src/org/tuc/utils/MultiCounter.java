@@ -4,8 +4,6 @@ package org.tuc.utils;
  * A class with static member variables and methods that can be used to count multiple stuff. 
  * safe.
  * 
- * @author sk
- * 
  */
 public class MultiCounter {
 	
