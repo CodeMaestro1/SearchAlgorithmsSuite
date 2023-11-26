@@ -2,43 +2,38 @@
 
 ## Overview
 
-This repository contains a Java program designed to test the complexity of a B+ tree implementation using textual data from multiple files. The primary objective is to assess the efficiency of the B+ tree in indexing words within the files and managing the associated information.
+Welcome to the B+ Tree Complexity Tester! This Java program is designed to assess the efficiency of a B+ tree implementation in indexing words within textual data from multiple files. The program analyzes the complexity of the B+ tree structure and its ability to manage word occurrences and associated information.
 
 ## Features
 
-- **B+ Tree Implementation:** The core of the project includes a B+ tree structure that efficiently organizes and manages word occurrences across multiple files.
+- **B+ Tree Implementation:** The core of the project features a robust B+ tree structure that efficiently organizes and manages word occurrences across multiple files.
 
-- **File Reading:** The program reads input files, extracting words, and building a B+ tree to index their occurrences.
+- **File Reading:** The program reads input files, extracts words, and builds a B+ tree to index their occurrences.
 
 - **Linked List Storage:** Each word in the B+ tree is associated with a linked list containing information about the file(s) in which the word is found and its position(s) within the file.
 
 ## How to Use
 
-1. **Clone the Repository:**
-   ```bash
-   https://github.com/CodeMaestro1/BPlusTree-LinkedList-Complexity.git
-   cd bplus-tree-complexity-tester
-   ```
+1. **Download the JAR File:**
+   - Download the JAR file from the [releases page](https://github.com/CodeMaestro1/BPlusTree-LinkedList-Complexity/releases).
 
-2. **Compile the Java Program:**
-   ```bash
-   javac MainConsole.java
-   ```
+2. **Place Input Files:**
+   - Place the text files you want to test in the same directory as the downloaded JAR file.
 
-3. **Run the Program:**
-   ```bash
-   java MainConsole
-   ```
+3. **Default Test Files:**
+   - The zip archive includes additional files in the current directory. These files are provided for performing a default test. You can use these files as a starting point for evaluating the B+ tree's performance.
 
-4. **Input Files:**
-   - Place the text files you want to test in the `input_files` directory.
-
-5. **View Results:**
-   - The program will generate output files in the `output_files` directory, showcasing the B+ tree structure and associated linked lists.
+4. **Run the Program:**
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing the JAR file and input files.
+   - Run the program using the following command:
+     ```bash
+     java -jar BplusTreeComplexityTester.jar
+     ```
 
 ## Sample Output
 
-The output will include visual representations of the B+ tree and linked lists for each word. Additionally, you can find statistical information about the efficiency of the B+ tree in handling the specified dataset.
+The output includes visual representations of the B+ tree and linked lists for each word. Additionally, statistical information about the efficiency of the B+ tree in handling the specified dataset is provided.
 
 ## Contributing
 
@@ -46,4 +41,4 @@ Feel free to contribute to the development of this project by submitting bug rep
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License (GNU GPL) - see the [LICENSE](LICENSE) file for details.
