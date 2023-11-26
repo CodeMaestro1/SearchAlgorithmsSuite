@@ -66,13 +66,12 @@ The method returns `true` if the target key is found within the specified data p
 
 ## Usage
 
-To use any of the key search methods provided in this repository, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Navigate to the relevant method's source code.
-3. Integrate the method into your project.
-4. Customize the method parameters to match your data and requirements.
-5. Run your project to observe the search results.
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing the JAR file and input files.
+   - Run the program using the following command:
+     ```bash
+     java -jar SearchMethodsDemo.jar
+     ```
 
 Each method's source code is thoroughly documented to assist your understanding of the implementation details.
 
