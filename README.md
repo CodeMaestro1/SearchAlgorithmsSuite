@@ -33,7 +33,7 @@ Welcome to the B+ Tree Complexity Tester! This Java program is designed to asses
 
 ## Sample Output
 
-The output includes visual representations of the B+ tree and linked lists for each word. Additionally, statistical information about the efficiency of the B+ tree in handling the specified dataset is provided.
+The output includes statistical information about the efficiency of the B+ tree in handling the specified dataset is provided.
 
 ## Contributing
 
