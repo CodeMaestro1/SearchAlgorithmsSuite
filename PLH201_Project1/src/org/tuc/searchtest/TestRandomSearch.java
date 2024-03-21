@@ -15,5 +15,6 @@ public class TestRandomSearch extends Test {
     protected boolean performSearch(int key, int stringLength, RandomAccessFile dataPairFile, RandomAccessFile keyFile) throws IOException {
         return RandomSearch.randomSearch(key, stringLength, dataPairFile);
     }
+
 }
 
