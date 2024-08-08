@@ -1,94 +1,106 @@
-# SearchMethodsDemo
+# Search Algorithms Suite and B+ Tree Complexity Tester
 
-A collection of methods for efficient key searching using different file index techniques. Includes random search, unsorted file index search, and sorted file index search implementations.
+Welcome to the **Search Algorithms Suite** and the **B+ Tree Complexity Tester**! This project includes tools and methods for key searching and B+ tree performance evaluation.
 
-## Table of Contents
+---
 
-- [SearchMethodsDemo](#searchmethodsdemo)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Methods](#methods)
-    - [Random Search](#random-search)
-    - [Unsorted File Index Search](#unsorted-file-index-search)
-      - [`searchGivenPage`](#searchgivenpage)
-      - [`searchInUnsortedFile`](#searchinunsortedfile)
-    - [Sorted File Index Search](#sorted-file-index-search)
-      - [`binarySearch`](#binarysearch)
-      - [`searchDataPage`](#searchdatapage)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
+## 📚 SearchMethodsDemo
 
+### Overview
 
-## Introduction
+`SearchMethodsDemo` demonstrates various key searching methods using file indexes. It includes implementations for:
+- Random Search
+- Unsorted File Index Search
+- Sorted File Index Search
 
-The purpose of this project is to demonstrate different approaches to key searching using file indexes. The implemented methods offer insights into how key search algorithms work in different scenarios, helping you understand their efficiency and trade-offs.
+### Key Components
 
-## Methods
+#### Random Search
 
-### Random Search
+- **Class:** `RandomSearch`
+- **Package:** `org.tuc.randomSearch`
+- **Description:** Implements a basic random search strategy to locate a key in a dataset.
 
-The `RandomSearch` class, located in the `org.tuc.randomSearch` package, provides a method for implementing a basic random search strategy to locate a specific key within a given dataset. This approach can be useful for smaller datasets, but it may not be the most efficient choice for larger datasets.
+#### Unsorted File Index Search
 
-### Unsorted File Index Search
+- **Class:** `UnsortedFileIndexSearch`
+- **Package:** `org.tuc.unsortedFileIndexSearch`
+- **Description:** Provides methods for searching using unsorted file indexes.
+  
+  - **`searchGivenPage(targetKey, dataPage, stringLength, dataPairFile)`**: Searches for a key within a specific data page.
+  - **`searchInUnsortedFile(targetKey, unsortedFile)`**: Searches for a key in an unsorted file index.
 
-The `UnsortedFileIndexSearch` class, situated within the `org.tuc.unsortedFileIndexSearch` package, offers methods for efficient key searching using unsorted file index techniques. This approach leverages the order of keys in the index to expedite search operations.
+#### Sorted File Index Search
 
-#### `searchGivenPage`
+- **Class:** `SortedFileIndexSearch`
+- **Package:** `org.tuc.sortedFileIndexSearch`
+- **Description:** Methods for binary and data page searches on a sorted file.
+  
+  - **`binarySearch(key, sortedFile)`**: Performs a binary search on a sorted file.
+  - **`searchDataPage(targetKey, dataPage, stringLength, dataPairFile)`**: Searches for a key within a specific data page of a data pair file.
 
-The `searchGivenPage` method is used to search for a target key within a specified data page of the dataset. It takes parameters such as `targetKey`, `dataPage`, `stringLength`, and `dataPairFile`.
+---
 
-#### `searchInUnsortedFile`
+## 🌳 B+ Tree Complexity Tester
 
-The `searchInUnsortedFile` method performs a search for a target key in an unsorted file index. It takes parameters such as `targetKey` and `unsortedFile`.
+### Overview
 
-### Sorted File Index Search
+The **B+ Tree Complexity Tester** assesses the efficiency of a B+ tree for indexing words from textual data across multiple files. It includes:
 
-The `SortedFileIndexSearch` class, located in the `org.tuc.sortedFileIndexSearch` package, provides utility methods for performing binary search and data page search operations on a sorted file. This class supports binary search operations and data page searches on a sorted file.
+- A robust B+ tree implementation
+- File reading capabilities
+- Linked list storage for word occurrences
 
-#### `binarySearch`
+### Key Features
 
-The `binarySearch` method performs a binary search on a sorted file to find a specified key. It takes the following parameters:
+- **B+ Tree Implementation:** Efficiently manages word occurrences.
+- **File Reading:** Extracts words and builds a B+ tree.
+- **Linked List Storage:** Associates words with file and position information using linked lists.
 
-- `key`: The key value you want to locate.
-- `sortedFile`: The file containing sorted keys.
+---
 
-The method returns the data page associated with the key if found; otherwise, it returns `-1`.
+## 📜 Common Sections
 
-#### `searchDataPage`
+### Usage
 
-The `searchDataPage` method performs a search for a target key within a specific data page of a data pair file. It takes the following parameters:
+For both projects, follow these steps to run the program:
 
-- `targetKey`: The key value you want to search for.
-- `dataPage`: The data page to search in.
-- `stringLength`: The length of the associated string for each key, which can be either 55 or 27.
-- `dataPairFile`: The file containing pairs of keys and associated strings.
+1. **Download the JAR File:**
+   - From the [releases page](https://github.com/CodeMaestro1/BPlusTree-LinkedList-Complexity/releases) for the B+ Tree Tester.
+   - For `SearchMethodsDemo`, download from the repository's release section.
 
-The method returns `true` if the target key is found within the specified data page; otherwise, it returns `false`.
+2. **Place Input Files:**
+   - Put the text files you want to test in the same directory as the JAR file.
 
-## Usage
-
+3. **Run the Program:**
    - Open a terminal or command prompt.
-   - Navigate to the directory containing the JAR file and input files.
-   - Run the program using the following command:
+   - Navigate to the directory with the JAR file and input files.
+   - Execute the program using:
      ```bash
-     java -jar SearchMethodsDemo.jar
+     java -jar [YourJARFileName].jar
      ```
+   - Replace `[YourJARFileName]` with `SearchMethodsDemo` or `BplusTreeComplexityTester` as appropriate.
 
-Each method's source code is thoroughly documented to assist your understanding of the implementation details.
+### Contributing
 
-## Contributing
+Contributions to both projects are encouraged! To contribute:
 
-Contributions to this repository are encouraged! If you have improvements, bug fixes, or additional methods to propose, please follow these guidelines:
+1. **Fork** the repository.
+2. **Create a new branch** for your feature or fix.
+3. **Implement** your changes and commit them.
+4. **Push** your changes to your fork.
+5. **Submit a pull request** with a description of your modifications.
 
-1. Fork this repository.
-2. Create a new branch for your feature/fix.
-3. Implement your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request explaining your modifications.
+Ensure your contributions adhere to the project's coding standards and include clear documentation.
 
-Please ensure that your contributions adhere to the project's coding standards and maintain clear documentation.
+### License
 
-## License
+Both projects are licensed under the [GNU General Public License](LICENSE). For detailed licensing information, please refer to the LICENSE file in the repository.
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE), a free software license that ensures user freedoms to use, share, and modify the software. For the full terms of the GPLv3 license, refer to the [LICENSE](LICENSE) file.
+### Contact
+
+For any questions or support, please open an issue on the GitHub repository or contact the maintainers.
+
+---
+
+Thank you for using and contributing to these projects!
