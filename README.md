@@ -63,24 +63,53 @@ The **B+ Tree Complexity Tester** assesses the efficiency of a B+ tree for index
 
 ### Usage
 
-For both projects, follow these steps to run the program:
+To build and run the projects, follow these steps:
 
-1. **Download the JAR File:**
-   - From the [releases page](https://github.com/CodeMaestro1/BPlusTree-LinkedList-Complexity/releases) for the B+ Tree Tester.
-   - For `SearchMethodsDemo`, download from the repository's release section.
+1. **Clone the Repository:**
 
-2. **Place Input Files:**
-   - Put the text files you want to test in the same directory as the JAR file.
+   ```bash
+   git clone https://github.com/YourUsername/YourRepository.git
+   cd YourRepository
+   ```
 
-3. **Run the Program:**
-   - Open a terminal or command prompt.
-   - Navigate to the directory with the JAR file and input files.
-   - Execute the program using:
+2. **Install Dependencies:**
+
+   Ensure you have `make` and `javac` (Java compiler) installed on your system.
+
+3. **Build the Projects:**
+
+   - **Build Project 1 (`SearchMethodsDemo`):**
+
      ```bash
-     java -jar [YourJARFileName].jar
+     make project1
      ```
-   - Replace `[YourJARFileName]` with `SearchMethodsDemo` or `BplusTreeComplexityTester` as appropriate.
 
+     This command compiles the Java source files and packages them into `project1.jar` located in the `build` directory.
+
+   - **Build Project 2 (`B+ Tree Complexity Tester`):**
+
+     ```bash
+     make project2
+     ```
+
+     This command compiles the Java source files, prepares the necessary files (`1.txt`, `2.txt`), and packages everything into `project2.jar` located in the `build` directory.
+
+4. **Run the Program:**
+
+   - For `SearchMethodsDemo`:
+
+     ```bash
+     java -jar project1.jar
+     ```
+
+   - For `B+ Tree Complexity Tester`:
+
+     ```bash
+     java -jar project2.jar
+     ```
+
+   Ensure that any required input files are in the same directory as the JAR file when running the program.
+---
 ### Contributing
 
 Contributions to both projects are encouraged! To contribute:
