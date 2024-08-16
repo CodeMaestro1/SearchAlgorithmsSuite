@@ -1,0 +1,78 @@
+# Define variables for project directories and output
+PROJECT1_DIR = SearchMethodsDemo
+PROJECT2_DIR = BPlusTree-LinkedList-Complexity
+OUTPUT_DIR = build
+MAIN_CLASS_PROJECT1 = org.tuc.searchtest.SearchTests
+MAIN_CLASS_PROJECT2 = org.tuc.console.MainConsole
+
+
+
+# Define files required by project2
+PROJECT2_FILES = BPlusTree-LinkedList-Complexity/1.txt BPlusTree-LinkedList-Complexity/2.txt
+
+
+
+# Check if javac is available
+CHECK_JAVAC := $(shell command -v javac 2> /dev/null)
+
+
+
+ifeq ($(CHECK_JAVAC),)
+  $(error javac not found. Please install the JDK before running this Makefile.)
+endif
+
+
+# Build Project 1
+
+build-project1:
+	@echo "Building Project 1..."
+	@mkdir -p $(OUTPUT_DIR)
+	@find $(PROJECT1_DIR)/src -name '*.java' | xargs javac -d $(OUTPUT_DIR)
+	@jar cfe $(OUTPUT_DIR)/project1.jar $(MAIN_CLASS_PROJECT1) -C $(OUTPUT_DIR) .
+
+
+
+# Build Project 2
+
+build-project2: prepare-project2-files
+	@echo "Building Project 2..."
+	@mkdir -p $(OUTPUT_DIR)
+	@find $(PROJECT2_DIR)/src -name '*.java' | xargs javac -d $(OUTPUT_DIR)
+	@jar cfe $(OUTPUT_DIR)/project2.jar $(MAIN_CLASS_PROJECT2) -C $(OUTPUT_DIR) .
+
+
+
+# Prepare files required by Project 2
+
+prepare-project2-files:
+	@echo "Preparing files for Project 2..."
+	@mkdir -p $(OUTPUT_DIR)
+	@cp $(PROJECT2_FILES) $(OUTPUT_DIR)
+
+
+
+# Targets
+
+all: help
+
+
+project1: build-project1
+
+
+project2: build-project2
+
+
+
+clean:
+	@echo "Cleaning up..."
+	@rm -rf $(OUTPUT_DIR)
+
+
+
+help:
+	@echo "Usage: make [target]"
+	@echo "Targets:"
+	@echo "  project1   - Build Project 1"
+	@echo "  project2   - Build Project 2"
+	@echo "  clean      - Clean the build directory"
+	@echo "  help       - Display this help message"
